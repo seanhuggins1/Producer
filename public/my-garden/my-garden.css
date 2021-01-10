@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(4rem + 1vw);
+  --header2: calc(1.8rem + 1vw);
+  --header3: calc(1.5rem + 1vw);
+  --header4: calc(1rem + 1vw);
+  --text: calc(1rem + 1vw);
+  --big: calc(2.4rem + 1vw);
+  --background-color: rgb(159, 224, 159);
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4 {
+  font-size: var(--header4);
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: var(--text);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+h1 {
+  font-family: sans-serif;
+}
+
+/*Nav Section */
+.main-head {
+  background: var(--background-color);
+  box-shadow: 0px 10px 10px darkolivegreen;
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0;
+}
+
+.header-img {
+  height: var(--header1);
+  width: auto;
+  border-radius: 50%;
+}
+
+.header-img2 {
+  height: var(--header1);
+  width: var(--header1);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+/* Main */
+.hero {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15rem 0 5rem 0;
+}
+
+.hero-images {
+  flex: 1 1 40rem;
+}
+
+.hero-introduction {
+  flex: 20 1 40rem;
+  text-align: left;
+  background: var(--background-color);
+  padding: 1rem;
+  border: 0.3px solid rgb(5, 66, 5);
+  border-radius: 5%;
+}
+
+.hero-introduction p {
+  padding: 1rem 0 2rem 0;
+}
+
+.hero-introduction h3 {
+  padding: 0 0 0.5rem 0;
+}
+
+.user-img {
+  height: 20rem;
+  width: auto;
+  border-radius: 50%;
+}
+
+.crop {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0 5rem 0;
+  flex: space-around;
+  justify-content: space-around;
+}
+
+.inevitable-crop,
+.future-crop,
+.current-crop {
+  background-color: var(--background-color);
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 33%;
+  border: 0.3px solid rgb(5, 66, 5);
+  border-radius: 5%;
+}
+
+.gallery {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0 5rem 0;
+  flex: space-around;
+  justify-content: space-around;
+}
+
+.gallery img {
+  max-height: 20rem;
+  max-width: auto;
+}
